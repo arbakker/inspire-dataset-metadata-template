@@ -38,28 +38,54 @@
 <li>❌ https://geodata.nationaalgeoregister.nl/rdinfo/wms</li>
 <li>✅ https://geodata.nationaalgeoregister.nl/rdinfo/wms?service=WMS&amp;request=GetCapabilities</li>
 <li><strong><em>Naam</em></strong> - De titel van de service</li>
-<li><strong><em>Omschrijving</em></strong> - De waarde <code>accessPoint</code></li>
-<li><strong><em>Functie</em></strong> - De waarde <code>information</code></li>
+<li><strong><em>Omschrijving</em></strong> - Vaste waarde <code>accessPoint</code></li>
+<li><strong><em>Functie</em></strong> - vaste waarde <code>information</code></li>
 <li><strong><em>Applicatie profiel</em></strong> - Afhankelijk van het type service, zie <a href="https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType">SpatialDataServiceType codelijst</a> </li></ul></li>
 </ol>
 <h4 id="22-identificatie">2.2 Identificatie</h4>
 <ol>
 <li><strong><em>Titel van de bron</em></strong> - Titel van de dataset, indien het een INSPIRE geharmonizeerde dataset is het gebruikelijk het achtervoegsel <code>(INSPIRE geharmoniseerd)</code> te gebruiken [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-1-titel-van-de-bron">spec</a>]</li>
 <li><strong><em>Datum van de bron</em></strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#datum-van-de-bron">spec</a>]</li>
+</ol>
+<h5 id="221-beheer-van-de-bron">2.2.1 Beheer van de bron</h5>
+<ol>
+<li><strong><em>Herzieningsfrequentie</em></strong> - Frequentie waarmee de data herzien wordt</li>
+</ol>
+<hr />
+<ol>
 <li><strong><em>Unieke Identifier van de bron</em></strong> - Vul hier een valide UUID in, zie bijvoorbeeld <a href="https://www.uuidgenerator.net/version4">www.uuidgenerator.net</a> voor het generen van een UUID [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-4-unieke-identifier-van-de-bron">spec</a>]</li>
 <li><strong><em>Samenvatting</em></strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-5-samenvatting">spec</a>]</li>
-<li><strong><em>Status</em></strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-5-samenvatting">spec</a>]</li>
-<li><strong><em>Taal van de bron</em></strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-5-samenvatting">spec</a>]</li>
-<li><strong><em>Onderwerp</em></strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-5-samenvatting">spec</a>]</li>
-<li><strong><em>GEMET - INSPIRE themes, version 1.0</em></strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-5-samenvatting">spec</a>]</li>
-<li><strong><em>Ruimtelijke dekking</em></strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-5-samenvatting">spec</a>]</li>
-<li><strong>_GEMET - Concepts, version 2.4 _</strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-5-samenvatting">spec</a>]</li>
+<li><strong><em>Status</em></strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-6-status">spec</a>]</li>
+<li><strong><em>Taal van de bron</em></strong> - Vaste waarde <code>dut</code> [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-7-taal-van-de-bron">spec</a>]</li>
+<li><strong><em>Onderwerp</em></strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-9-onderwerp">spec</a>]</li>
 </ol>
+<h5 id="222-contactgegevens-voor-de-data">2.2.2 Contactgegevens voor de data</h5>
+<ol>
+<li><strong>Organisatie</strong> - Vul de juiste organisatienaam in en vul in het veld eronder een URI naar representatief is voor de organisatie, zie ook de <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#Verantwoordelijke-organisatie-bron">spec</a></li>
+<li><strong><em>Email</em></strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-11-verantwoordelijke-organisatie-bron-e-mail">spec</a>]</li>
+<li><strong><em>Rol</em></strong> - Vaste waarde <code>contactpunt</code> [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-12-verantwoordelijke-organisatie-bron-rol">spec</a>]</li>
+</ol>
+<hr />
+<ol>
+<li><strong><em>GEMET - INSPIRE themes, version 1.0</em></strong> - Keyword uit INSPIRE <a href="https://inspire.ec.europa.eu/theme">theme register</a> [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-13-trefwoord">spec</a>]</li>
+<li><strong><em>Ruimtelijke dekking</em></strong> - Keyword uit INSPIRE <a href="https://inspire.ec.europa.eu/metadata-codelist/SpatialScope/">SpatialScope codelist</a> [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-5-samenvatting">spec</a>]</li>
+<li><strong><em>GEMET - Concepts, version 2.4</em></strong> - Optionele additionele keywords (bij voorkeur komen deze dus uit de <a href="https://www.eionet.europa.eu/gemet/en/themes/">Gemet Concepts thesaurus</a>) [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-13-trefwoord">spec</a>]</li>
+</ol>
+<h4 id="23-ruimtelijke-informatie">2.3 Ruimtelijke informatie</h4>
+<ol>
+<li><strong><em>Ruimtelijk schema</em></strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-20-ruimtelijk-schema-van-de-bron">spec</a>]</li>
+<li>Een van:<ul>
+<li><strong><em>Schaal</em></strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-21-toepassingsschaal">spec</a>]</li>
+<li><strong><em>Resolutie</em></strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-22-resolutie">spec</a>]</li></ul></li>
+</ol>
+<blockquote>
+  <p><strong>N.B.</strong> In het geval dat het veld <strong><em>Resolutie</em></strong> gebruikt wordt dient het veld <strong><em>Schaal</em></strong> verwijderd te worden. Verwijder deze door op het kruisje klikken naast het element. </p>
+</blockquote>
 <h4 id="221-beperkingen">2.2.1 Beperkingen</h4>
 <h4 id="222-juridische-toegansbeperkingen---1">2.2.2 Juridische toegansbeperkingen - 1</h4>
 <h4 id="223-juridische-toegansbeperkingen---2">2.2.3 Juridische toegansbeperkingen - 2</h4>
 <h4 id="224-contactgegevens-voor-de-data">2.2.4 Contactgegevens voor de data</h4>
-<h4 id="23-ruimtelijke-informatie">2.3 Ruimtelijke informatie</h4>
+<h4 id="23-ruimtelijke-informatie-1">2.3 Ruimtelijke informatie</h4>
 <h4 id="231-omgrenzende-rechthoek">2.3.1 Omgrenzende rechthoek</h4>
 <hr />
 <h4 id="24-data-kwaliteit">2.4 Data kwaliteit</h4>
