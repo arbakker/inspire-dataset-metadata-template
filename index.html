@@ -7,8 +7,8 @@
       <body>
         <div id='content'>
     <h1 id="inspire-dataset-metadata-template">INSPIRE DATASET METADATA TEMPLATE</h1>
-<p><a href="https://github.com/arbakker"><img src="https://img.shields.io/badge/author-@arbakker-blue.svg?style=flat" alt="" /></a><br />
-<a href="https://arbakker.github.io/inspire-dataset-metadata-template/"><img src="https://img.shields.io/badge/gh--pages-readme-green?style=flat" alt="" /></a></p>
+<p><a href="https://github.com/arbakker"><img src="https://img.shields.io/badge/author-@arbakker-blue.svg?style=flat" alt="" /></a></p>
+<p><a href="https://arbakker.github.io/inspire-dataset-metadata-template/"><img src="https://img.shields.io/badge/gh--pages-readme-green?style=flat" alt="" /></a></p>
 <p>Dit repository bevat:</p>
 <ul>
 <li>een <a href="https://raw.githubusercontent.com/arbakker/inspire-dataset-metadata-template/master/inspire-dataset-metadata-template.xml">template</a> voor het eenvoudig aanmaken van een geldig INSPIRE dataset metadata record in <a href="https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/home">nationaalgeoregister.nl</a> (NGR)</li>
@@ -31,20 +31,37 @@
 <p><img src="https://user-images.githubusercontent.com/3216462/173834968-cbe80302-cb7c-436f-b2f1-7a96158ca5d0.png" alt="image" /></p>
 <h4 id="21-downloads-views-en-links">2.1 Downloads, views en links</h4>
 <ol>
-<li><strong><em>Kleine afbeelding</em></strong> - Vervang de placeholder voorbeeld weergave afbeelding met een van de dataset die beschreven wordt in dit metadata record. Aangeraden wordt vanuit PDOK om een afbeelding te kiezen met afmetingen van 500x500 pixels. </li>
-<li><strong><em>Hyperlinks</em></strong> -  Vervang beide links naar de service accespoints, dus voor zowel de dowload als de view service. In het template zijn een <strong>WMS</strong> en <strong>INSPIRE ATOM</strong> placeholder service url voor ingevuld, maar hier kunnen ook andere service protocollen gebruikt worden:<ul>
-<li>download: INSPIRE ATOM, WFS, WCS</li>
-<li>view: WMS, WMTS </li></ul></li>
+<li><strong><em>Kleine afbeelding</em></strong> - Vervang de placeholder voorbeeld weergave afbeelding met een van de dataset die beschreven wordt in dit metadata record. Aangeraden wordt vanuit PDOK om een afbeelding te kiezen met afmetingen van <code>500x500</code> pixels. </li>
+<li><strong><em>Hyperlinks</em></strong> -  Vervang beide links naar de service accespoints, dus voor zowel de dowload als de view service. In het template zijn een <strong>WMS</strong> en <strong>INSPIRE ATOM</strong> placeholder service url voor ingevuld, maar hier kunnen ook andere service protocollen gebruikt worden. Vul de volgende velden voor de hyperlink als volgt in:<ul>
+<li><strong><em>Protocol</em></strong> - Kies juiste waarde uit de lijst</li>
+<li><strong><em>URL</em></strong> - Service URL dat linkt naar een capabilities document (of INSPIRE Atom service feed)</li>
+<li>:x: https://geodata.nationaalgeoregister.nl/rdinfo/wms</li>
+<li>:heavy<em>check</em>mark: https://geodata.nationaalgeoregister.nl/rdinfo/wms?service=WMS&amp;request=GetCapabilities</li>
+<li><strong><em>Naam</em></strong> - De titel van de service</li>
+<li><strong><em>Omschrijving</em></strong> - De waarde <code>accessPoint</code></li>
+<li><strong><em>Functie</em></strong> - De waarde <code>information</code></li>
+<li><strong><em>Applicatie profiel</em></strong> - Afhankelijk van het type service, zie <a href="https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType">SpatialDataServiceType codelijst</a> </li></ul></li>
 </ol>
-<blockquote>
-  <p><strong>N.B.</strong> Belangrijk is wel dat gelinkt wordt naar een service accesspoint wat een een capabilities document oplevert:</p>
-  <ul>
-  <li>:x: https://geodata.nationaalgeoregister.nl/rdinfo/wms</li>
-  <li>:heavy<em>check</em>mark: https://geodata.nationaalgeoregister.nl/rdinfo/wms?service=WMS&amp;request=GetCapabilities</li>
-  </ul>
-</blockquote>
 <h4 id="22-identificatie">2.2 Identificatie</h4>
+<ol>
+<li><strong><em>Titel van de bron</em></strong> - Titel van de dataset, indien het een INSPIRE geharmonizeerde dataset is het gebruikelijk het achtervoegsel <code>(INSPIRE geharmoniseerd)</code> te gebruiken [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-1-titel-van-de-bron">spec</a>]</li>
+<li><strong><em>Datum van de bron</em></strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#datum-van-de-bron">spec</a>]</li>
+<li><strong><em>Unieke Identifier van de bron</em></strong> - Vul hier een valide UUID in, zie bijvoorbeeld <a href="https://www.uuidgenerator.net/version4">www.uuidgenerator.net</a> voor het generen van een UUID [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-4-unieke-identifier-van-de-bron">spec</a>]</li>
+<li><strong><em>Samenvatting</em></strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-5-samenvatting">spec</a>]</li>
+<li><strong><em>Status</em></strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-5-samenvatting">spec</a>]</li>
+<li><strong><em>Taal van de bron</em></strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-5-samenvatting">spec</a>]</li>
+<li><strong><em>Onderwerp</em></strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-5-samenvatting">spec</a>]</li>
+<li><strong><em>GEMET - INSPIRE themes, version 1.0</em></strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-5-samenvatting">spec</a>]</li>
+<li><strong><em>Ruimtelijke dekking</em></strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-5-samenvatting">spec</a>]</li>
+<li><strong>_GEMET - Concepts, version 2.4 _</strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-5-samenvatting">spec</a>]</li>
+</ol>
+<h4 id="221-beperkingen">2.2.1 Beperkingen</h4>
+<h4 id="222-juridische-toegansbeperkingen---1">2.2.2 Juridische toegansbeperkingen - 1</h4>
+<h4 id="223-juridische-toegansbeperkingen---2">2.2.3 Juridische toegansbeperkingen - 2</h4>
+<h4 id="224-contactgegevens-voor-de-data">2.2.4 Contactgegevens voor de data</h4>
 <h4 id="23-ruimtelijke-informatie">2.3 Ruimtelijke informatie</h4>
+<h4 id="231-omgrenzende-rechthoek">2.3.1 Omgrenzende rechthoek</h4>
+<hr />
 <h4 id="24-data-kwaliteit">2.4 Data kwaliteit</h4>
 <h4 id="25-over-de-metadata">2.5 Over de metadata</h4>
 <h3 id="3-valideren-metadata-record-in-inspire-etf-validator">3. Valideren metadata record in INSPIRE ETF validator</h3>
