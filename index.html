@@ -29,6 +29,7 @@
 <h3 id="2-invullen-velden-nieuw-metadata-record">2. Invullen velden nieuw metadata record</h3>
 <p>Deze invul instructie gaat er vanuit dat de <em>Nederlands profiel</em> view geselecteerd is in de metadata editor:</p>
 <p><img src="https://user-images.githubusercontent.com/3216462/173834968-cbe80302-cb7c-436f-b2f1-7a96158ca5d0.png" alt="image" /></p>
+<p>Velden die niet genoemd worden kunnen worden overgeslagen, net als velden waar achter vermeld staat <code>`Vaste waarde</code>$x```.</p>
 <h4 id="21-downloads-views-en-links">2.1 Downloads, views en links</h4>
 <ol>
 <li><strong><em>Kleine afbeelding</em></strong> - Vervang de placeholder voorbeeld weergave afbeelding met een van de dataset die beschreven wordt in dit metadata record. Aangeraden wordt vanuit PDOK om een afbeelding te kiezen met afmetingen van <code>500x500</code> pixels. </li>
@@ -81,15 +82,30 @@
 <blockquote>
   <p><strong>N.B.</strong> In het geval dat het veld <strong><em>Resolutie</em></strong> gebruikt wordt dient het veld <strong><em>Schaal</em></strong> verwijderd te worden. Verwijder deze door op het kruisje klikken naast het element. </p>
 </blockquote>
-<h4 id="221-beperkingen">2.2.1 Beperkingen</h4>
-<h4 id="222-juridische-toegansbeperkingen---1">2.2.2 Juridische toegansbeperkingen - 1</h4>
-<h4 id="223-juridische-toegansbeperkingen---2">2.2.3 Juridische toegansbeperkingen - 2</h4>
-<h4 id="224-contactgegevens-voor-de-data">2.2.4 Contactgegevens voor de data</h4>
-<h4 id="23-ruimtelijke-informatie-1">2.3 Ruimtelijke informatie</h4>
-<h4 id="231-omgrenzende-rechthoek">2.3.1 Omgrenzende rechthoek</h4>
-<hr />
-<h4 id="24-data-kwaliteit">2.4 Data kwaliteit</h4>
-<h4 id="25-over-de-metadata">2.5 Over de metadata</h4>
+<h4 id="24-gebruiks-beperkingen">2.4 Gebruiks beperkingen</h4>
+<h4 id="241-beperkingen">2.4.1 Beperkingen</h4>
+<ol>
+<li><strong><em>Gebruiksbeperkingen</em></strong> - Indien geen gebruiksbeperkingen vul dan <code>Geen gebruiksbeperkingen</code> in [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-19-gebruiksbeperkingen">spec</a>]</li>
+</ol>
+<h4 id="25-juridische-toegansbeperkingen">2.5 Juridische toegansbeperkingen</h4>
+<p>Zie <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-17-juridische-toegangsrestricties">spec</a> voor uitleg. Template is voor ingevuld op basis van <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#example-5-xml-notatie-open-data-licentie-met-inspire"><em>Voorbeeld 5</em></a> uit de spec. </p>
+<h5 id="251-juridische-toegansbeperkingen">2.5.1 Juridische toegansbeperkingen</h5>
+<p>Vaste waarde, indien gebruik wordt gemaakt van https://creativecommons.org/publicdomain/mark/1.0/deed.nl licentie.</p>
+<h5 id="252-juridische-toegansbeperkingen">2.5.2 Juridische toegansbeperkingen</h5>
+<p>Vaste waarde, indien gebruik wordt gemaakt van https://creativecommons.org/publicdomain/mark/1.0/deed.nl licentie.</p>
+<h4 id="26-distributie">2.6 Distributie</h4>
+<h5 id="261-distributie-formaat">2.6.1 Distributie formaat</h5>
+<ol>
+<li><strong><em>Naam distributie formaat</em></strong><ul>
+<li><strong><em>Text veld</em></strong> - Format <code>$THEMA_NAAM - GML Application Schema</code>, bijvoorbeeld: <code>Protected Sites - GML Application Schema</code> </li>
+<li><strong><em>URL Verwijzing</em></strong> - URL naar XSD van INSPIRE thema bijvoorbeeld:  <code>https://inspire.ec.europa.eu/schemas/ps/4.0/ProtectedSites.xsd</code></li></ul></li>
+<li><strong><em>Versie distributie formaat</em></strong> - Vaste waarde:  <code>GML, version 3.2.1</code></li>
+<li><strong><em>Specificatie distributie formaat</em></strong><ul>
+<li><strong><em>Text veld</em></strong> - Format <code>Data specificatie $THEMA_NAAM_NL</code>, bijvoorbeeld: <code>Data specificatie Beschermde gebieden</code> </li>
+<li><strong><em>URL Verwijzing</em></strong> - URL INSPIRE technical guidance van thema, bijvoorbeeld: <code>http://inspire.ec.europa.eu/id/document/tg/ps</code></li></ul></li>
+</ol>
+<h4 id="27-data-kwaliteit">2.7 Data kwaliteit</h4>
+<h4 id="28-over-de-metadata">2.8 Over de metadata</h4>
 <h3 id="3-valideren-metadata-record-in-inspire-etf-validator">3. Valideren metadata record in INSPIRE ETF validator</h3>
 
         </div>
