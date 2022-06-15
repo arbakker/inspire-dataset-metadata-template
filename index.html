@@ -7,10 +7,47 @@
       <body>
         <div id='content'>
     <h1 id="inspire-dataset-metadata-template">INSPIRE DATASET METADATA TEMPLATE</h1>
-<p>Template voor het eenvoudig aanmaken van een geldig INSPIRE dataset metadata record in <a href="https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/home">nationaalgeoregister.nl</a>.</p>
+<p><a href="https://github.com/arbakker"><img src="https://img.shields.io/badge/author-@arbakker-blue.svg?style=flat" alt="" /></a><br />
+<a href="https://arbakker.github.io/inspire-dataset-metadata-template/"><img src="https://img.shields.io/badge/gh--pages-readme-green?style=flat" alt="" /></a></p>
+<p>Dit repository bevat:</p>
+<ul>
+<li>een <a href="https://raw.githubusercontent.com/arbakker/inspire-dataset-metadata-template/master/inspire-dataset-metadata-template.xml">template</a> voor het eenvoudig aanmaken van een geldig INSPIRE dataset metadata record in <a href="https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/home">nationaalgeoregister.nl</a> (NGR)</li>
+<li>een <a href="https://arbakker.github.io/inspire-dataset-metadata-template/#handleiding">handleiding</a> voor het invullen van dit template in de metadata editor van het <a href="https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/home">NGR</a></li>
+</ul>
+<p>Dit template is aangemaakt aan de hand van het <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/">Nederlands metadata profiel op ISO 19115 voor geografie versie 2.1.0</a>.</p>
 <h2 id="handleiding">Handleiding</h2>
 <p>Deze handleiding beschrijft hoe een valide INSPIRE dataset metadata record aan te maken op basis van het door PDOK aangemaakte <a href="https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/C2DFBDBC-5092-11E0-BA8E-B62DE0D72085"><em>Template Nederlands metadata profiel op ISO 19115 voor geografie 2.1.0 - INSPIRE</em></a>.</p>
-<h3 id="1">1</h3>
+<h3 id="1-aanmaken-nieuw-metadata-record-op-basis-van-template">1. Aanmaken nieuw metadata record op basis van template</h3>
+<ul>
+<li>Log in op het <a href="https://nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/home">nationaalgeoregister.nl</a> en kies via het menu <em>Metadata beheer > Record toevoegen</em></li>
+<li>Kies dan voor <em>Dataset</em> als type document</li>
+<li>En <em>Template Nederlands metadata profiel op ISO 19115 voor geografie 2.1.0 - INSPIRE</em> als template</li>
+<li>Kies de juiste groep voor het nieuwe metadata record</li>
+<li>En klik op <em>Aanmaken</em></li>
+</ul>
+<p>Na het aanmaken van het nieuwe metadata record wordt het nieuwe record geopened in de metadata editor van het NGR.</p>
+<h3 id="2-invullen-velden-nieuw-metadata-record">2. Invullen velden nieuw metadata record</h3>
+<p>Deze invul instructie gaat er vanuit dat de <em>Nederlands profiel</em> view geselecteerd is in de metadata editor:</p>
+<p><img src="https://user-images.githubusercontent.com/3216462/173834968-cbe80302-cb7c-436f-b2f1-7a96158ca5d0.png" alt="image" /></p>
+<h4 id="21-downloads-views-en-links">2.1 Downloads, views en links</h4>
+<ol>
+<li><strong><em>Kleine afbeelding</em></strong> - Vervang de placeholder voorbeeld weergave afbeelding met een van de dataset die beschreven wordt in dit metadata record. Aangeraden wordt vanuit PDOK om een afbeelding te kiezen met afmetingen van 500x500 pixels. </li>
+<li><strong><em>Hyperlinks</em></strong> -  Vervang beide links naar de service accespoints, dus voor zowel de dowload als de view service. In het template zijn een <strong>WMS</strong> en <strong>INSPIRE ATOM</strong> placeholder service url voor ingevuld, maar hier kunnen ook andere service protocollen gebruikt worden:<ul>
+<li>download: INSPIRE ATOM, WFS, WCS</li>
+<li>view: WMS, WMTS </li></ul></li>
+</ol>
+<blockquote>
+  <p><strong>N.B.</strong> Belangrijk is wel dat gelinkt wordt naar een service accesspoint wat een een capabilities document oplevert:</p>
+  <ul>
+  <li>:x: https://geodata.nationaalgeoregister.nl/rdinfo/wms</li>
+  <li>:heavy<em>check</em>mark: https://geodata.nationaalgeoregister.nl/rdinfo/wms?service=WMS&amp;request=GetCapabilities</li>
+  </ul>
+</blockquote>
+<h4 id="22-identificatie">2.2 Identificatie</h4>
+<h4 id="23-ruimtelijke-informatie">2.3 Ruimtelijke informatie</h4>
+<h4 id="24-data-kwaliteit">2.4 Data kwaliteit</h4>
+<h4 id="25-over-de-metadata">2.5 Over de metadata</h4>
+<h3 id="3-valideren-metadata-record-in-inspire-etf-validator">3. Valideren metadata record in INSPIRE ETF validator</h3>
 
         </div>
         <style type='text/css'>body {
