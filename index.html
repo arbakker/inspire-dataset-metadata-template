@@ -96,17 +96,46 @@
 <h4 id="26-distributie">2.6 Distributie</h4>
 <h5 id="261-distributie-formaat">2.6.1 Distributie formaat</h5>
 <ol>
-<li><strong><em>Naam distributie formaat</em></strong><ul>
-<li><strong><em>Text veld</em></strong> - Format <code>$THEMA_NAAM - GML Application Schema</code>, bijvoorbeeld: <code>Protected Sites - GML Application Schema</code> </li>
+<li><strong><em>Naam distributie formaat</em></strong> [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-26-naam-distributie-formaat">spec</a>]<ul>
+<li><strong><em>Text veld</em></strong> - Format <code>$THEMA_NAAM GML Application Schema</code>, bijvoorbeeld: <code>Protected Sites - GML Application Schema</code> </li>
 <li><strong><em>URL Verwijzing</em></strong> - URL naar XSD van INSPIRE thema bijvoorbeeld:  <code>https://inspire.ec.europa.eu/schemas/ps/4.0/ProtectedSites.xsd</code></li></ul></li>
-<li><strong><em>Versie distributie formaat</em></strong> - Vaste waarde:  <code>GML, version 3.2.1</code></li>
-<li><strong><em>Specificatie distributie formaat</em></strong><ul>
+<li><strong><em>Versie distributie formaat</em></strong> - Voor ingevulde waarde:  <code>versie 4.0; GML, versie 3.2.1</code> (afhankelijk van versie XSD thema en GML) [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-27-versie-distributie-formaat">spec</a>]</li>
+<li><strong><em>Specificatie distributie formaat</em></strong> [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-28-specificatie-distributie-formaat">spec</a>]<ul>
 <li><strong><em>Text veld</em></strong> - Format <code>Data specificatie $THEMA_NAAM_NL</code>, bijvoorbeeld: <code>Data specificatie Beschermde gebieden</code> </li>
 <li><strong><em>URL Verwijzing</em></strong> - URL INSPIRE technical guidance van thema, bijvoorbeeld: <code>http://inspire.ec.europa.eu/id/document/tg/ps</code></li></ul></li>
 </ol>
 <h4 id="27-data-kwaliteit">2.7 Data kwaliteit</h4>
+<ol>
+<li><strong><em>Niveau kwaliteits beschrijving</em></strong> - Vaste waarde <code>dataset</code> [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-33-niveau-kwaliteitsbeschrijving">spec</a>]</li>
+<li><strong><em>Algemene beschrijving herkomst</em></strong> - [<a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-34-algemene-beschrijving-herkomst">spec</a>]</li>
+</ol>
+<h5 id="271-domein-consistentie--conformiteit-indicatie-met-de-specificatie-1">2.7.1 Domein consistentie / Conformiteit indicatie met de specificatie 1</h5>
+<p>Vooringevuld, zie <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-35-specificatie">spec</a>. Is indicatie dat de dataset en bijbehorende services voldoen aan de INSPIRE richtlijnen, indien de checkbox <strong><em>Conformiteit indicatie met de specificatie</em></strong> is aangevinkt. Indien niet volledige voldaan wordt aan de INSPIRE richtlijnen kan in het veld <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-38-verklaring"><em><strong>Verklaring</strong></em></a> worden aangeven waarom niet wordt voldaan aan de richtlijnen. </p>
+<h5 id="272-domein-consistentie--conformiteit-indicatie-met-de-specificatie-2">2.7.2 Domein consistentie / Conformiteit indicatie met de specificatie 2</h5>
+<p>Tweede <strong><em>Conformiteit indicatie met de specificatie</em></strong> element is om aan te geven dat dataset voldoet aan de datamodel behorend bij het INSPIRE data thema.</p>
+<ol>
+<li><a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-35-specificatie"><strong><em>Titel</em></strong></a><ul>
+<li><strong><em>URL verwijzing</em></strong> - URL naar pagina waar technical guidance voor data thema te downloaden is, bijvoorbeeld: <code>https://inspire.ec.europa.eu/id/document/tg/au</code></li></ul></li>
+<li><a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-35-specificatie"><strong><em>Specificatie datum</em></strong></a> - Laat type datum op <code>publicatie</code> staan en vul de publicatie datum van de Technical Guidance van het betreffende INSPIRE data thema</li>
+<li><a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-38-verklaring"><strong><em>Verklaring</em></strong></a> - Vul waarde in <code>Dataset voldoet aan specificatie</code> indien deze voldoen aan de specificatie, indien deze niet voldoet kan hier een reden worden opgegeven waarom niet wordt voldaan aan de specificatie. </li>
+</ol>
 <h4 id="28-over-de-metadata">2.8 Over de metadata</h4>
-<h3 id="3-valideren-metadata-record-in-inspire-etf-validator">3. Valideren metadata record in INSPIRE ETF validator</h3>
+<ol>
+<li><a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-44-taal-van-de-metadata"><strong><em>Taal van de metadata</em></strong></a> - Vaste waarde <code>dut</code></li>
+<li><strong><em>Metadata karakterset</em></strong> -  Vaste waarde <code>Utf8</code> </li>
+<li><a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-46-hierarchieniveau"><strong><em>Hiërarchisch niveau</em></strong></a> - Vaste waarde <code>dataset</code></li>
+</ol>
+<h5 id="281-contact-gegevens-voor-de-metadata">2.8.1 Contact gegevens voor de metadata</h5>
+<ol>
+<li>[<strong>Organisatie</strong>](https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-48-verantwoordelijke-organisatie-metadata<br />
+) - Vul de juiste organisatienaam in en vul in het veld eronder een URI naar representatief is voor de organisatie</li>
+<li><a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#metadata-elementen-uitwerking"><strong><em>Email</em></strong></a></li>
+<li><a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-49-verantwoordelijke-organisatie-metadata-rol"><strong><em>Rol</em></strong></a> - Vaste waarde <code>contactpunt</code></li>
+</ol>
+<h3 id="3-valideren-met-inspire-etf-validator">3. Valideren met INSPIRE ETF validator</h3>
+<blockquote>
+  <p>TODO</p>
+</blockquote>
 
         </div>
         <style type='text/css'>body {
