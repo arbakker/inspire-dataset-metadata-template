@@ -27,9 +27,21 @@
 </ul>
 <p>Na het aanmaken van het nieuwe metadata record wordt het nieuwe record geopened in de metadata editor van het NGR.</p>
 <h3 id="2-invullen-velden-nieuw-metadata-record">2. Invullen velden nieuw metadata record</h3>
-<p>Deze invul instructie gaat er vanuit dat de <em>Nederlands profiel</em> view geselecteerd is in de metadata editor:</p>
+<p>Deze invulinstructie gaat er vanuit dat de <em>Nederlands profiel</em> view geselecteerd is in de metadata editor:</p>
 <p><img src="https://user-images.githubusercontent.com/3216462/173834968-cbe80302-cb7c-436f-b2f1-7a96158ca5d0.png" alt="image" /></p>
-<p>Velden die niet genoemd worden kunnen worden overgeslagen, net als velden waar achter vermeld staat <code>`Vaste waarde</code>$x```.</p>
+<p>Alle velden die ingevuld dienen te worden of toelichting behoeven zijn opgenomen in de invul instructie. </p>
+<p>Velden die niet genoemd worden in de invulinstructie maar wel in de metadata editor zitten kunnen ongewijzigd worden overgenomen. </p>
+<p>kunnen worden overgeslagen, net als velden waar achter vermeld staat <code>Vaste waarde $X</code>.</p>
+<p>Velden in de metadata editor worden in de instrucite <strong><em>Kleine afbeelding</em></strong></p>
+<p>Opmaak conventie:</p>
+<ul>
+<li><a href="https://example.com/veldnaam"><strong><em>Veldnaam met documentatie</em></strong></a> -  Veldnaam uit de NGR metadata editor met documentatie lemma in <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/">Nederlands metadata profiel op ISO 19115 voor geografie versie 2.1.0</a></li>
+<li><strong><em>Veldnaam zonder documentatie</em></strong>  - Veldnaam uit de NGR metadata editor, waarvoor geen documentatie lemma beschikbaar is in <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/">Nederlands metadata profiel op ISO 19115 voor geografie versie 2.1.0</a>.</li>
+<li><code>waarde</code> - Invulwaarde</li>
+<li>headers corresponderen met de secties in de metadata editor bijv</li>
+</ul>
+<p><img src="https://user-images.githubusercontent.com/3216462/174039366-d98ebe84-4738-4253-ba46-aca232ac22f8.png" alt="image" /><br />
+<img src="https://user-images.githubusercontent.com/3216462/174039556-c37cd9f4-550d-46b8-b0c0-98016c37c422.png" alt="image" /></p>
 <h4 id="21-downloads-views-en-links">2.1 Downloads, views en links</h4>
 <ol>
 <li><strong><em>Kleine afbeelding</em></strong> - Vervang de placeholder voorbeeld weergave afbeelding met een van de dataset die beschreven wordt in dit metadata record. Aangeraden wordt vanuit PDOK om een afbeelding te kiezen met afmetingen van <code>500x500</code> pixels. </li>
@@ -40,7 +52,7 @@
 <li><a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-30-protocol"><strong><em>Protocol</em></strong></a> - Kies juiste waarde uit de lijst</li>
 <li><a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-31-naam"><strong><em>Naam</em></strong></a>, in het geval van INSPIRE ontsluit één service typisch één dataset; in dat geval dient hier de titel van de service ingevuld te worden.  </li>
 <li><a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-32-omschrijving"><strong><em>Omschrijving</em></strong></a> - Vaste waarde <code>accessPoint</code></li>
-<li><strong><em>Functie</em></strong> - vaste waarde <code>information</code></li>
+<li><strong><em>Functie</em></strong> - Vaste waarde <code>information</code></li>
 <li><strong><em>Applicatie profiel</em></strong> - Afhankelijk van het type service, zie <a href="https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType">SpatialDataServiceType codelijst</a> en zie voor meer informatie de <a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-32-omschrijving">spec</a>. </li></ul></li>
 </ol>
 <h4 id="22-identificatie">2.2 Identificatie</h4>
@@ -58,6 +70,7 @@
 <li><a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-5-samenvatting"><strong><em>Samenvatting</em></strong></a></li>
 <li><a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-6-status"><strong><em>Status</em></strong></a></li>
 <li><a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-7-taal-van-de-bron"><strong><em>Taal van de bron</em></strong></a> - Vaste waarde <code>dut</code></li>
+<li><a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-8-karakterset-van-de-bron"><strong><em>Karakterset van de bron</em></strong></a> - Voor ingevulde waarde <code>utf8</code></li>
 <li><a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-9-onderwerp"><strong><em>Onderwerp</em></strong></a></li>
 </ol>
 <h5 id="222-contactgegevens-voor-de-data">2.2.2 Contactgegevens voor de data</h5>
@@ -122,7 +135,7 @@
 <h4 id="28-over-de-metadata">2.8 Over de metadata</h4>
 <ol>
 <li><a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-44-taal-van-de-metadata"><strong><em>Taal van de metadata</em></strong></a> - Vaste waarde <code>dut</code></li>
-<li><strong><em>Metadata karakterset</em></strong> -  Vaste waarde <code>Utf8</code> </li>
+<li><strong><em>Metadata karakterset</em></strong> -  Vaste waarde <code>utf8</code> </li>
 <li><a href="https://docs.geostandaarden.nl/md/mdprofiel-iso19115/#x5-2-46-hierarchieniveau"><strong><em>Hiërarchisch niveau</em></strong></a> - Vaste waarde <code>dataset</code></li>
 </ol>
 <h5 id="281-contact-gegevens-voor-de-metadata">2.8.1 Contact gegevens voor de metadata</h5>
@@ -135,6 +148,11 @@
 <blockquote>
   <p>TODO</p>
 </blockquote>
+<style>
+a strong em{
+    color: #0366d6
+}
+</style>
 
         </div>
         <style type='text/css'>body {
