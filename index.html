@@ -170,6 +170,23 @@
 </ol>
 <p>Nadat alle velden zijn ingevuld </p>
 <h3 id="3-valideren-met-inspire-etf-validator">3. Valideren met INSPIRE ETF validator</h3>
+<ol>
+<li>Navigeer met de browser naar de <a href="https://inspire.ec.europa.eu/validator/home/index.html">INSPIRE Reference Validator</a></li>
+<li>Klik op <em>Test your data, services or metadata</em></li>
+<li>Selecteer bij <em>Select the INSPIRE resource you would like to test</em> de waarde <code>Metadata</code></li>
+<li>Selecteer bij <em>Select the Technical Guidelines version</em> de waarde <code>Version 2.0</code></li>
+<li>Selecteerd bij <em>Select the type of metadata record(s) to be tested</em> de waarde <code>Data sets and data set series</code></li>
+<li>Vul de antispam filter in</li>
+<li>Geef een referentie naar het zojuist aangemaakt metadata record op:</li>
+</ol>
+<ul>
+<li>een url naar het XML document van de metadata, dus bijvoorbeeld: <code>https://ngr.acceptatie.nationaalgeoregister.nl/geonetwork/srv/dut/csw?SERVICE=CSW&amp;version=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;OutputSchema=http://www.isotc211.org/2005/gmd&amp;ID=60a2a7c2-d5b3-4ad5-b562-c448695357fb</code></li>
+<li>download het XML metadata document vanuit het NGR en upload het bestand in het formulier (bijvoorbeeld in het geval het metadata record nog niet gepubliceerd is)</li>
+</ul>
+<ol>
+<li>Bij een geslaagde validatie wordt het volgende scherm getoond (<code>PASSED_MANUAL</code> geeft aan dat de validatie geslaagd is, maar dat een aantal zaken nog handmatig gecontroleerd moeten worden):</li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/3216462/174074851-c700bfdf-72c4-406e-bca1-f4243a95cdbc.png" alt="image" /></p>
 <hr />
 <blockquote>
   <p><strong>N.B.</strong> Onderstaande <code>CSS</code> is nodig voor styling van de gh-pages page.</p>
